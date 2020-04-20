@@ -27,6 +27,7 @@ class CircularQueue{
 		enqueue(89);
 		display();
 	}
+	//Enqueue Function
 	public static void enqueue(int data){
 		if ((rear+1)%size==front)
 			System.out.println("Queue is full");
@@ -35,6 +36,7 @@ class CircularQueue{
 			queue[rear]=data;
 		}
 	}
+	//Dequeue Function
 	public static int dequeue(){
 		int x=-1;
 		if (front==rear)
